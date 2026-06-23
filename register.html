@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register | K23-XXXX</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body style="font-family: 'Segoe UI', system-ui, sans-serif; background: linear-gradient(135deg, #a29bfe, #fd79a8); height: 100vh; margin: 0; display: flex; justify-content: center; align-items: center;">
+
+    <main style="background: white; width: 100%; max-width: 450px; padding: 40px; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.15); box-sizing: border-box;">
+        <header style="text-align: center; margin-bottom: 25px;">
+            <h1 style="color: #2d3436; margin: 0; font-size: 2em;">Create Account</h1>
+            <p style="color: #636e72; margin-top: 5px;">Join our community today</p>
+        </header>
+
+        <form action="login.html" method="GET" style="display: flex; flex-direction: column; gap: 15px;">
+            <div>
+                <label for="reg-username" style="display: block; font-weight: 600; color: #2d3436; margin-bottom: 5px;">Username</label>
+                <input type="text" id="reg-username" name="username" required minlength="4" placeholder="Choose a username" 
+                       style="width: 100%; padding: 10px; border: 2px solid #dfe6e9; border-radius: 8px; box-sizing: border-box; font-size: 0.95em;">
+            </div>
+
+            <div>
+                <label for="email" style="display: block; font-weight: 600; color: #2d3436; margin-bottom: 5px;">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="name@example.com" 
+                       style="width: 100%; padding: 10px; border: 2px solid #dfe6e9; border-radius: 8px; box-sizing: border-box; font-size: 0.95em;">
+            </div>
+
+            <div>
+                <label for="reg-password" style="display: block; font-weight: 600; color: #2d3436; margin-bottom: 5px;">Password</label>
+                <input type="password" id="reg-password" name="password" required minlength="8" placeholder="At least 8 characters" 
+                       style="width: 100%; padding: 10px; border: 2px solid #dfe6e9; border-radius: 8px; box-sizing: border-box; font-size: 0.95em;">
+            </div>
+
+            <div>
+                <label style="display: block; font-weight: 600; color: #2d3436; margin-bottom: 5px;">Gender</label>
+                <div style="display: flex; gap: 20px; padding: 5px 0;">
+                    <label style="cursor: pointer;"><input type="radio" name="gender" value="male" required style="margin-right: 5px;"> Male</label>
+                    <label style="cursor: pointer;"><input type="radio" name="gender" value="female" style="margin-right: 5px;"> Female</label>
+                </div>
+            </div>
+
+            <div style="display: flex; align-items: flex-start; margin-top: 5px;">
+                <input type="checkbox" id="terms" name="terms" required style="margin-top: 4px; margin-right: 8px; cursor: pointer;">
+                <label for="terms" style="color: #636e72; font-size: 0.9em; cursor: pointer;">I agree to the Terms & Conditions and Privacy Policy.</label>
+            </div>
+
+            <button type="submit" style="background: #e84393; color: white; border: none; padding: 12px; font-size: 1em; font-weight: bold; border-radius: 8px; cursor: pointer; margin-top: 10px;">
+                Register Now
+            </button>
+        </form>
+
+        <footer style="text-align: center; margin-top: 20px; color: #636e72; font-size: 0.95em;">
+            Already have an account? <a href="login.html" style="color: #e84393; text-decoration: none; font-weight: bold;">Login here</a>
+        </footer>
+    </main>
+
+</body>
+</html>
